@@ -55,7 +55,7 @@ def mouse_control(thumb, index_finger, ring_finger,):
         pos = (screen_center[0] + vec[0] * edge_factor, screen_center[1] + vec[1] * edge_factor)
 
         #Very smooth mouse movement with easing and no delay and no jitter
-        if abs(mouse[0] - pos[0]) > 7 or abs(mouse[1] - pos[1]) > 7:
+        if abs(mouse[0] - pos[0]) > 6 or abs(mouse[1] - pos[1]) > 6:
             try:
                 pyautogui.moveTo(pos[0], pos[1], _pause=False)
             except:
@@ -85,10 +85,6 @@ while True:
     image.flags.writeable = False
     # Process the image
     results = hands.process(image)
-
-
-    # if in_tablet_mode:
-    #     ctypes.windll.user32.ShowCursor(True)
 
     image.flags.writeable = True
     #Hand detection and tracking
