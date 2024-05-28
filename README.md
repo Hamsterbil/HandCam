@@ -7,8 +7,8 @@ Control screen with the force because it's cool.
   >https://www.python.org/downloads/
 * Open terminal [Cmd / Powershell]
 ```
-  > pip install opencv-python <br>
-  > pip install pyautogui <br>
+  > pip install opencv-python
+  > pip install pyautogui
   > pip install mediapipe
 ```
 * Find program.py location and run
@@ -20,7 +20,7 @@ Control screen with the force because it's cool.
 ```
   Show camera feed? (y/n):
   > y
-  Are you in tablet mode? (y/n):
+  Is your camera upside down? (y/n):
   > n
 ```
 

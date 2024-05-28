@@ -1,6 +1,10 @@
 import cv2
 import mediapipe as mp
 import pyautogui
+
+show_cam = input("Show camera feed? (y/n): ").lower() == 'y'
+in_tablet_mode = input("Is your camera upside down? (y/n): ").lower() == 'y'
+
 #Create a window showing camera feed
 cap = cv2.VideoCapture(0)
 
@@ -15,8 +19,6 @@ hands.static_image_mode = False
 pyautogui.FAILSAFE = False
 
 scrolling, clicking, draw = False, False, False
-show_cam = input("Show camera feed? (y/n): ").lower() == 'y'
-in_tablet_mode = input("Is your camera upside down? (y/n): ").lower() == 'y'
 screen_width, screen_height = pyautogui.size()
 screen_center = (screen_width // 2, screen_height // 2)
 start_pos = []
